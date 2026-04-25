@@ -3,33 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Projeto Interdisciplinar</title>
+    <title>Painel de Contratos | aaagência</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Bem-vindo ao Meu Site</h1>
-    </header>
+<header>
+    <div class="logo">aaagência<span>.</span></div>
+    <nav>
+        <span>Olá, <strong>João Pedro de Aguilar Queiroz</strong></span>
+        <a href="#" class="btn-logout">Sair</a>
+    </nav>
+</header>
 
-    <main>
-        <section>
-            <h2>Sobre o Projeto</h2>
-            <p>Este é um site simples criado para servir de base para o projeto interdisciplinar.</p>
-        </section>
+<main class="main-container">
+    <section class="header-painel">
+        <h1>Gerenciamento de Contratos</h1>
+        <p>Centralize seus documentos e prazos com a aaagência.</p>
+    </section>
 
-        <section>
-            <h2>Links Úteis</h2>
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </section>
-    </main>
+    <section class="stats-grid">
+        <div class="card card-purple">
+            <h3>Contratos Ativos</h3>
+            <p id="total-contratos">0</p>
+        </div>
+        <div class="card card-pink">
+            <h3>Investimento Mensal</h3>
+            <p>R$ 4.500,00</p>
+        </div>
+        <div class="card card-green">
+            <h3>Próxima Renovação</h3>
+            <p>15 dias</p>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026</p>
-    </footer>
+    <section class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Serviço</th>
+                    <th>Valor</th>
+                    <th>Vigência</th>
+                    <th>Status</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="lista-contratos">
+                </tbody>
+        </table>
+    </section>
 
+    <div class="support-area">
+        <a href="#" class="btn-whatsapp">Acionar Suporte via WhatsApp</a>
+    </div>
+</main>
+
+<script src="/javascript/script.js"></script>
 </body>
 </html>
